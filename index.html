@@ -11,6 +11,7 @@
         <div class="toggle" onclick="toggleMenu();"></div>
         <div class="buttonup" onclick="toggleUp();"></div>
         <div class="buttondown" onclick="toggleDown();"></div>
+        
     
 
         <section class="intro">
@@ -69,6 +70,8 @@
             
             }
 
+        
+
             function toggleDown(){
                 const downtoggle = document.querySelector('.intro');
                 downtoggle.classList.toggle('down');
@@ -78,8 +81,6 @@
                 bttndown.classList.toggle('down');
                 const bttn2down = document.querySelector('.buttondown');
                 bttn2down.classList.toggle('down');
-                const bttn4 = document.querySelector('.buttonup2');
-                bttn4.classList.toggle('up');
                 const uptoggle = document.querySelector('.intro');
                 uptoggle.classList.toggle('up');
                 const page2 = document.querySelector('.below');
@@ -102,8 +103,6 @@
                 bttn.classList.toggle('up');
                 const bttn2 = document.querySelector('.buttondown');
                 bttn2.classList.toggle('up');
-                const bttn4 = document.querySelector('.buttonup2');
-                bttn4.classList.toggle('up');
                 if(bttn.classList.contains('down')){
                     const downtoggle = document.querySelector('.intro');
                     downtoggle.classList.toggle('down');
@@ -115,6 +114,8 @@
                     bttn2down.classList.toggle('down');
                 }
             }
+
+            
 
             
             
