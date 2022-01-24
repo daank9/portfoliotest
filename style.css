@@ -2,7 +2,7 @@
 body{
   background-repeat: no-repeat;
   background-size: cover;
-
+  overflow: -moz-hidden-unscrollable;
 }
 
 
@@ -28,15 +28,28 @@ body{
   
 }
 
-
 .intro{
-  position: fixed;
-  top: 25%;
-  margin-right: 50%;
-  margin-left: 50%;
+  text-align: center;
   width: 100%;
   height: 100%;
-  align-items: center;
+  
+  
+}
+
+.wrapper, .intro {
+  height: 500px;
+  width: 600px;
+}
+.wrapper {
+  bottom: 50%;
+  right: 50%;
+  position:
+  absolute;
+}
+.intro {
+  left: 50%;
+  position: relative;
+  top: 50%;
 }
 
 .intro.up{
@@ -45,27 +58,22 @@ body{
 }
 
 .intro.down{
-  top:25%;
   transition:1s;
 }
 
 .intro img{
-  position: absolute;
-  width: fit-content;
+  width:auto;
   height: 210px;
-  margin-left: auto;
-  margin-right: auto;
   background: white;
-  
   border-radius: 50%;
+  
 }
 
 .intro h4{
-  position: absolute;
-  text-align: center;
   top: 30%;
   font-size: 3em;
   color:#faf860;
+  
 }
 
 .below{
@@ -120,7 +128,7 @@ body{
 .buttondown{
   position: fixed;
   top: 4%;
-  right: 51%;
+  right: 50%;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -165,7 +173,7 @@ body{
   
   position: fixed;
   bottom: 4%;
-  right: 51%;
+  right: 50%;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -201,43 +209,43 @@ body{
 
 .toggle
 {
-    position: fixed;
-    top: 30px;
-    right: 45px;
-    width: 50px;
-    height: 50px;
-    background: #000 url(menu.png);
-    background-size: 30px;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    z-index: 1000;
+  position: fixed;
+  top: 30px;
+  right: 45px;
+  width: 50px;
+  height: 50px;
+  background: #000 url(menu.png);
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 1000;
 }
 
 .toggle.active
 {
     
     
-    background: #000 url(close.png);
-    background-size: 25px;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
+  background: #000 url(close.png);
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 
 
 
 .sidebar{
-  position: absolute;
+  position: fixed;
   background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
   top:0;
-  right:0;
-  width: 160px;
-  height: 50%;
+  right: 0px;
+  width: 100px;
+  height: 40%;
   transition: 0.5s;
   padding: 40px;
   z-index: 100;
@@ -473,19 +481,7 @@ body{
     
   }
 
-  .intro img{
-    top: -10%;
-    margin-left: auto;
-    margin-right: auto;
-      
-  }
-
-  .intro h4{
-    transform: translate(-50%, 0%);
-    font-size: 40px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  
 
   .below h4{
     font-size: 40px;
