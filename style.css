@@ -65,6 +65,7 @@ body{
   height: 210px;
   background: white;
   border-radius: 50%;
+  max-width: 100%;
   
 }
 
@@ -139,6 +140,7 @@ body{
   z-index: 1000;
   transition: 1s;
   top: 200%;
+  max-width: 100%;
 
 }
 
@@ -183,6 +185,7 @@ body{
   background-repeat: no-repeat;
   z-index: 1000;
   transition: 1s;
+  max-width: 100%;
 }
 
 .buttonup.up{
@@ -219,6 +222,7 @@ body{
   background-repeat: no-repeat;
   cursor: pointer;
   z-index: 1000;
+  max-width: 100%;
 }
 
 .toggle.active
@@ -249,6 +253,7 @@ body{
   padding: 40px;
   z-index: 100;
   top: -100%;
+  max-width: 100%;
 
 }
 
@@ -289,7 +294,7 @@ body{
 
 .buttonup2
 {
-  
+  max-width: 100%;
   position: fixed;
   bottom: -145%;
   right: 51%;
@@ -327,6 +332,21 @@ body{
   color:black;
   transition: 1s;
   
+}
+
+.belower p{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 520px;
+  font-size: 0.8cm;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.belower img{
+  width: 250px;
+  height: auto;
+  max-width: 100%;
 }
 
 .belower h4{
@@ -370,6 +390,7 @@ body{
   z-index: 1000;
   transition: 1s;
   top: 200%;
+  max-width: 100%;
 
 }
 
@@ -397,6 +418,7 @@ body{
   background-repeat: no-repeat;
   z-index: 1000;
   transition: 1s;
+  max-width: 100%;
 }
 
 .buttonup3.up{
@@ -434,6 +456,15 @@ body{
   
 }
 
+.last p{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 550px;
+  font-size: 0.8cm;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
 .last.up{
   top:10%;
   transition: 1s;
@@ -459,6 +490,7 @@ body{
   z-index: 1000;
   transition: 1s;
   top: 200%;
+  max-width: 100%;
 
 }
 
@@ -478,6 +510,11 @@ body{
     min-height: 100vh;
     padding: 40px;
     
+  }
+
+  .sidebar{
+    width: 80px;
+    height: 60%
   }
 
   
@@ -502,6 +539,14 @@ body{
     font-size: 40px;
     bottom: 50%;
     padding: 40px;
+    
+  }
+  .belower p{
+    font-size: 18px;
+    margin-left:auto;
+    margin-right: auto;
+    height: 30%;
+    
     
   }
 
